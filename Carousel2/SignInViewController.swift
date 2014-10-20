@@ -13,7 +13,10 @@ class SignInViewController: UIViewController {
     @IBAction func arrowsButton(sender: AnyObject) {navigationController?.popToRootViewControllerAnimated(false)}
     @IBAction func signinButton(sender: AnyObject) {
         self.loginActivity.startAnimating()
+        var loginAlert = UIAlertView(title: "Logging In", message: nil, delegate: nil, cancelButtonTitle: nil)
+        loginAlert.show()
         delay(2){
+            loginAlert.dismissWithClickedButtonIndex(0, animated: true)
             self.checkFields()
             self.loginActivity.stopAnimating()
             }

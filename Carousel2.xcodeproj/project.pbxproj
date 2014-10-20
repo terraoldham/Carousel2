@@ -15,6 +15,7 @@
 		0CB94C4C19F4520A0054734A /* Carousel2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C4B19F4520A0054734A /* Carousel2Tests.swift */; };
 		0CB94C5619F454BD0054734A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5519F454BD0054734A /* IntroViewController.swift */; };
 		0CB94C5819F459F00054734A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5719F459F00054734A /* SignInViewController.swift */; };
+		0CB94C5A19F49DFB0054734A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5919F49DFB0054734A /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		0CB94C4B19F4520A0054734A /* Carousel2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel2Tests.swift; sourceTree = "<group>"; };
 		0CB94C5519F454BD0054734A /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		0CB94C5719F459F00054734A /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0CB94C5919F49DFB0054734A /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				0CB94C3519F4520A0054734A /* AppDelegate.swift */,
 				0CB94C3719F4520A0054734A /* ViewController.swift */,
 				0CB94C3919F4520A0054734A /* Main.storyboard */,
+				0CB94C5919F49DFB0054734A /* TutorialViewController.swift */,
 				0CB94C5719F459F00054734A /* SignInViewController.swift */,
 				0CB94C5519F454BD0054734A /* IntroViewController.swift */,
 				0CB94C3C19F4520A0054734A /* Images.xcassets */,
@@ -220,6 +223,7 @@
 			files = (
 				0CB94C5819F459F00054734A /* SignInViewController.swift in Sources */,
 				0CB94C5619F454BD0054734A /* IntroViewController.swift in Sources */,
+				0CB94C5A19F49DFB0054734A /* TutorialViewController.swift in Sources */,
 				0CB94C3819F4520A0054734A /* ViewController.swift in Sources */,
 				0CB94C3619F4520A0054734A /* AppDelegate.swift in Sources */,
 			);
