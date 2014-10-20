@@ -13,6 +13,8 @@
 		0CB94C3D19F4520A0054734A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB94C3C19F4520A0054734A /* Images.xcassets */; };
 		0CB94C4019F4520A0054734A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB94C3E19F4520A0054734A /* LaunchScreen.xib */; };
 		0CB94C4C19F4520A0054734A /* Carousel2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C4B19F4520A0054734A /* Carousel2Tests.swift */; };
+		0CB94C5619F454BD0054734A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5519F454BD0054734A /* IntroViewController.swift */; };
+		0CB94C5819F459F00054734A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5719F459F00054734A /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		0CB94C4519F4520A0054734A /* Carousel2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Carousel2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB94C4A19F4520A0054734A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CB94C4B19F4520A0054734A /* Carousel2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel2Tests.swift; sourceTree = "<group>"; };
+		0CB94C5519F454BD0054734A /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		0CB94C5719F459F00054734A /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				0CB94C3519F4520A0054734A /* AppDelegate.swift */,
 				0CB94C3719F4520A0054734A /* ViewController.swift */,
 				0CB94C3919F4520A0054734A /* Main.storyboard */,
+				0CB94C5719F459F00054734A /* SignInViewController.swift */,
+				0CB94C5519F454BD0054734A /* IntroViewController.swift */,
 				0CB94C3C19F4520A0054734A /* Images.xcassets */,
 				0CB94C3E19F4520A0054734A /* LaunchScreen.xib */,
 				0CB94C3319F4520A0054734A /* Supporting Files */,
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB94C5819F459F00054734A /* SignInViewController.swift in Sources */,
+				0CB94C5619F454BD0054734A /* IntroViewController.swift in Sources */,
 				0CB94C3819F4520A0054734A /* ViewController.swift in Sources */,
 				0CB94C3619F4520A0054734A /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +413,7 @@
 				0CB94C5119F4520A0054734A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CB94C5219F4520A0054734A /* Build configuration list for PBXNativeTarget "Carousel2Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +422,7 @@
 				0CB94C5419F4520A0054734A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
