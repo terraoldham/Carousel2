@@ -492,6 +492,7 @@
                                         </state>
                                         <connections>
                                             <action selector="conversationButtonBack:" destination="jEZ-7C-cvT" eventType="touchUpInside" id="a7i-vZ-DvC"/>
+                                            <segue destination="woR-lr-fjg" kind="modal" id="Nun-3g-AgW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -635,5 +636,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="egh-O5-b7A"/>
+        <segue reference="Nun-3g-AgW"/>
     </inferredMetricsTieBreakers>
 </document>
