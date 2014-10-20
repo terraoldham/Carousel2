@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  ConversationsViewController.swift
 //  Carousel2
 //
 //  Created by Terra Oldham on 10/19/14.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageView: UIImageView!
+class ConversationsViewController: UIViewController {
+    @IBAction func conversationButtonBack(sender: AnyObject) {navigationController?.popToRootViewControllerAnimated(false)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = imageView.image!.size
 
         // Do any additional setup after loading the view.
     }

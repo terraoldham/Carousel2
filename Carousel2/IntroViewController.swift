@@ -13,7 +13,7 @@ class IntroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 320, height: 1190)
+        scrollView.contentSize = CGSize(width: 320, height: 1135)
         
 
         // Do any additional setup after loading the view.

@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  SettingsViewController.swift
 //  Carousel2
 //
 //  Created by Terra Oldham on 10/19/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class SettingsViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
 

@@ -10,7 +10,6 @@ import UIKit
 
 class SignInViewController: UIViewController {
     @IBOutlet weak var loginActivity: UIActivityIndicatorView!
-    @IBAction func arrowsButton(sender: AnyObject) {navigationController?.popToRootViewControllerAnimated(false)}
     @IBAction func signinButton(sender: AnyObject) {
         self.loginActivity.startAnimating()
         var loginAlert = UIAlertView(title: "Logging In", message: nil, delegate: nil, cancelButtonTitle: nil)
@@ -24,6 +23,8 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBAction func onTap(sender: AnyObject) {view.endEditing(true)
+    }
+    @IBAction func backButton(sender: AnyObject) {navigationController?.popToRootViewControllerAnimated(false)
     }
     
 

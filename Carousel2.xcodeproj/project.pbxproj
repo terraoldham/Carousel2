@@ -17,6 +17,10 @@
 		0CB94C5619F454BD0054734A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5519F454BD0054734A /* IntroViewController.swift */; };
 		0CB94C5819F459F00054734A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5719F459F00054734A /* SignInViewController.swift */; };
 		0CB94C5A19F49DFB0054734A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB94C5919F49DFB0054734A /* TutorialViewController.swift */; };
+		0CDB2DBE19F4C9FF00E758E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB2DBD19F4C9FF00E758E4 /* SettingsViewController.swift */; };
+		0CDB2DC019F4D30700E758E4 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB2DBF19F4D30700E758E4 /* ConversationsViewController.swift */; };
+		0CDB2DC219F4DA4B00E758E4 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB2DC119F4DA4B00E758E4 /* CreateViewController.swift */; };
+		0CDB2DC419F4E33B00E758E4 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB2DC319F4E33B00E758E4 /* TermsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		0CB94C5519F454BD0054734A /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		0CB94C5719F459F00054734A /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0CB94C5919F49DFB0054734A /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		0CDB2DBD19F4C9FF00E758E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0CDB2DBF19F4D30700E758E4 /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		0CDB2DC119F4DA4B00E758E4 /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		0CDB2DC319F4E33B00E758E4 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,10 @@
 				0CB94C3719F4520A0054734A /* ViewController.swift */,
 				0C1040B019F4BB4B002BC5BA /* FeedViewController.swift */,
 				0CB94C3919F4520A0054734A /* Main.storyboard */,
+				0CDB2DC319F4E33B00E758E4 /* TermsViewController.swift */,
+				0CDB2DC119F4DA4B00E758E4 /* CreateViewController.swift */,
+				0CDB2DBF19F4D30700E758E4 /* ConversationsViewController.swift */,
+				0CDB2DBD19F4C9FF00E758E4 /* SettingsViewController.swift */,
 				0CB94C5919F49DFB0054734A /* TutorialViewController.swift */,
 				0CB94C5719F459F00054734A /* SignInViewController.swift */,
 				0CB94C5519F454BD0054734A /* IntroViewController.swift */,
@@ -226,6 +238,10 @@
 			files = (
 				0CB94C5819F459F00054734A /* SignInViewController.swift in Sources */,
 				0CB94C5619F454BD0054734A /* IntroViewController.swift in Sources */,
+				0CDB2DC219F4DA4B00E758E4 /* CreateViewController.swift in Sources */,
+				0CDB2DBE19F4C9FF00E758E4 /* SettingsViewController.swift in Sources */,
+				0CDB2DC419F4E33B00E758E4 /* TermsViewController.swift in Sources */,
+				0CDB2DC019F4D30700E758E4 /* ConversationsViewController.swift in Sources */,
 				0CB94C5A19F49DFB0054734A /* TutorialViewController.swift in Sources */,
 				0CB94C3819F4520A0054734A /* ViewController.swift in Sources */,
 				0C1040B119F4BB4B002BC5BA /* FeedViewController.swift in Sources */,
