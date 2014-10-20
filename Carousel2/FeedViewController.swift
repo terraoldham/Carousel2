@@ -1,5 +1,5 @@
 //
-//  TutorialViewController.swift
+//  FeedViewController.swift
 //  Carousel2
 //
 //  Created by Terra Oldham on 10/19/14.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController, UIScrollViewDelegate {
+class FeedViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 1280, height: 586)
-        scrollView.delegate = self
+        scrollView.contentSize = imageView.image!.size
+        
 
         // Do any additional setup after loading the view.
     }
@@ -25,10 +25,6 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func scrollViewdidEndDecelerating(scrollView: UIScrollView!) {
-        var page : Int = Int(round(scrollView.contentOffset.x / 320))
-        pageControl.currentPage = page
-    }
 
     /*
     // MARK: - Navigation
