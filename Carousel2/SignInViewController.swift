@@ -11,6 +11,10 @@ import UIKit
 class SignInViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginActivity: UIActivityIndicatorView!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var viewView: UIView!
+    
     @IBAction func signinButton(sender: AnyObject) {
         self.loginActivity.startAnimating()
         var loginAlert = UIAlertView(title: "Logging In", message: nil, delegate: nil, cancelButtonTitle: nil)
@@ -19,32 +23,20 @@ class SignInViewController: UIViewController {
             loginAlert.dismissWithClickedButtonIndex(0, animated: true)
             self.checkFields()
             self.loginActivity.stopAnimating()
-            }
         }
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBAction func onEmailEdit(sender: AnyObject) {
     }
-    @IBAction func onPasswordEdit(sender: AnyObject) {
-    }
-    @IBAction func onTap(sender: AnyObject) {view.endEditing(true)
+    
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
     }
     @IBAction func backButton(sender: AnyObject) {navigationController?.popToRootViewControllerAnimated(false)
     }
-    @IBOutlet weak var viewView: UIView!
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize = CGSize(width: 320, height: 650)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func checkFields() {
@@ -70,16 +62,5 @@ class SignInViewController: UIViewController {
     func keyboardWillHide(notification: NSNotification!) {
         viewView.transform = CGAffineTransformMakeTranslation(0, 0)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
