@@ -9,25 +9,29 @@
 import UIKit
 
 class CreateViewController: UIViewController {
-    @IBAction func onTap(sender: AnyObject) {view.endEditing(true)
-    }
+    
     @IBOutlet weak var firstField: UITextField!
     @IBOutlet weak var lastField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var passwordField: UITextField!
-    @IBAction func onAcceptButton(sender: AnyObject) {createButton.selected = true}
-    @IBAction func createButton(sender: AnyObject) {
-        checkCreate()}
+    @IBOutlet weak var viewView: UIView!
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    @IBAction func createButton(sender: AnyObject) {
+        checkCreate()
+    }
+   @IBAction func onAcceptButton(sender: AnyObject) {
+        createButton.selected = true
     }
     
     func checkCreate() {
@@ -49,15 +53,13 @@ class CreateViewController: UIViewController {
     func delay(delay:Double, closure:()->()) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        viewView.transform = CGAffineTransformMakeTranslation(0, -150)
     }
-    */
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        viewView.transform = CGAffineTransformMakeTranslation(0, 0)
+    }
 
 }
