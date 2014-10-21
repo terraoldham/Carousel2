@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel2/SignInViewController.swift"
-            timestampString = "435473405.337941"
+            timestampString = "435542819.740418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "SignInViewController"
             landmarkType = "3">
          </BreakpointContent>

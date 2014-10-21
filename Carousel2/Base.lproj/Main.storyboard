@@ -256,60 +256,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="6oj-rq-OLk">
-                                <rect key="frame" x="0.0" y="93" width="320" height="288"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="IsQ-Io-BMa">
+                                <rect key="frame" x="0.0" y="10" width="320" height="558"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAROUSEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hXm-yi-fRY">
-                                        <rect key="frame" x="23" y="0.0" width="274" height="48"/>
+                                    <view contentMode="scaleToFill" id="6oj-rq-OLk">
+                                        <rect key="frame" x="0.0" y="81" width="320" height="287"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="34"/>
-                                        <color key="textColor" red="0.989058514" green="0.989058514" blue="0.989058514" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOR DROPBOX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SEF-zA-Jey">
-                                        <rect key="frame" x="95" y="41" width="131" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
-                                        <color key="textColor" red="0.989058514" green="0.989058514" blue="0.989058514" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Use your Dropbox credentials to view galleries of all your photos and videos." textAlignment="center" selectable="NO" id="l9z-TC-CJE">
-                                        <rect key="frame" x="25" y="73" width="270" height="52"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" id="lG1-PO-k7S">
-                                        <rect key="frame" x="25" y="133" width="270" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="lKu-bj-54r">
-                                        <rect key="frame" x="25" y="171" width="270" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WBG-aR-VBn">
-                                        <rect key="frame" x="25" y="209" width="270" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
-                                        <state key="normal" title="Sign In">
-                                            <color key="titleColor" red="0.989058514" green="0.989058514" blue="0.989058514" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="signinButton:" destination="jFU-u7-fW0" eventType="touchUpInside" id="DTB-ad-ykf"/>
-                                        </connections>
-                                    </button>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" id="xrw-nc-LVQ">
-                                        <rect key="frame" x="150" y="247" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </activityIndicatorView>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOR DROPBOX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SEF-zA-Jey">
+                                                <rect key="frame" x="95" y="41" width="131" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                                <color key="textColor" red="0.989058514" green="0.989058514" blue="0.989058514" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Use your Dropbox credentials to view galleries of all your photos and videos." textAlignment="center" selectable="NO" id="l9z-TC-CJE">
+                                                <rect key="frame" x="25" y="73" width="270" height="52"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" id="lG1-PO-k7S">
+                                                <rect key="frame" x="25" y="133" width="270" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="onEmailEdit:" destination="jFU-u7-fW0" eventType="editingChanged" id="XE7-zX-mrJ"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" id="lKu-bj-54r">
+                                                <rect key="frame" x="25" y="171" width="270" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="onPasswordEdit:" destination="jFU-u7-fW0" eventType="editingChanged" id="GRA-nf-kcS"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WBG-aR-VBn">
+                                                <rect key="frame" x="25" y="209" width="270" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" red="0.989058514" green="0.989058514" blue="0.989058514" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signinButton:" destination="jFU-u7-fW0" eventType="touchUpInside" id="DTB-ad-ykf"/>
+                                                </connections>
+                                            </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" id="xrw-nc-LVQ">
+                                                <rect key="frame" x="150" y="247" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAROUSEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hXm-yi-fRY">
+                                                <rect key="frame" x="23" y="0.0" width="274" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="34"/>
+                                                <color key="textColor" red="0.989058514" green="0.989058514" blue="0.989058514" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
                                 </subviews>
-                            </view>
+                            </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_in_nav_bar" id="hSW-Xh-Yby">
                                 <rect key="frame" x="0.0" y="-12" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -338,6 +350,8 @@
                         <outlet property="emailField" destination="lG1-PO-k7S" id="3mp-t3-K3b"/>
                         <outlet property="loginActivity" destination="xrw-nc-LVQ" id="viI-e7-dPV"/>
                         <outlet property="passwordField" destination="lKu-bj-54r" id="mxw-pY-Y0g"/>
+                        <outlet property="scrollView" destination="IsQ-Io-BMa" id="7By-OF-fZ1"/>
+                        <outlet property="viewView" destination="6oj-rq-OLk" id="rbK-C3-vVt"/>
                         <segue destination="uRZ-E4-lNF" kind="modal" identifier="signin" id="dvg-eT-B4c"/>
                     </connections>
                 </viewController>
@@ -364,7 +378,7 @@
                                 <color key="pageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.18389176099999999" green="0.26113432199999997" blue="0.58227040819999998" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="XXx-bs-4yR">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" id="XXx-bs-4yR">
                                 <rect key="frame" x="-7" y="-94" width="1320" height="662"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -452,7 +466,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jEZ-7C-cvT" kind="modal" id="oDA-3b-Tet"/>
+                                    <segue destination="jEZ-7C-cvT" kind="push" id="oDA-3b-Tet"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -492,7 +506,6 @@
                                         </state>
                                         <connections>
                                             <action selector="conversationButtonBack:" destination="jEZ-7C-cvT" eventType="touchUpInside" id="a7i-vZ-DvC"/>
-                                            <segue destination="woR-lr-fjg" kind="modal" id="Nun-3g-AgW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -500,6 +513,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="X9I-KA-2N6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGb-hB-PYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -636,6 +650,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="egh-O5-b7A"/>
-        <segue reference="Nun-3g-AgW"/>
     </inferredMetricsTieBreakers>
 </document>

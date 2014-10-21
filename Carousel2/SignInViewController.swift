@@ -9,6 +9,7 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loginActivity: UIActivityIndicatorView!
     @IBAction func signinButton(sender: AnyObject) {
         self.loginActivity.startAnimating()
@@ -22,15 +23,22 @@ class SignInViewController: UIViewController {
         }
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBAction func onEmailEdit(sender: AnyObject) {
+    }
+    @IBAction func onPasswordEdit(sender: AnyObject) {
+    }
     @IBAction func onTap(sender: AnyObject) {view.endEditing(true)
     }
     @IBAction func backButton(sender: AnyObject) {navigationController?.popToRootViewControllerAnimated(false)
     }
+    @IBOutlet weak var viewView: UIView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scrollView.contentSize = CGSize(width: 320, height: 650)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
     }
 
@@ -53,6 +61,14 @@ class SignInViewController: UIViewController {
     
     func delay(delay:Double, closure:()->()) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), closure)
+    }
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        viewView.transform = CGAffineTransformMakeTranslation(0, -50)
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        viewView.transform = CGAffineTransformMakeTranslation(0, 0)
     }
     
 
